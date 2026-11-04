@@ -3,11 +3,15 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "Resume"
       href: about.html
+    - text: "LinkedIn"
+      href: http://www.linkedin.com/in/jia-varkey-87aa3639b
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<jiamvarkey@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: http://github.com/<jiavarkey>/
+      
 output:
-  html_document
+  html_document:
+    theme: flatly

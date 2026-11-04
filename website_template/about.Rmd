@@ -1,9 +1,46 @@
 ---
 title: "About"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-### About this site
+## Education
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+### Columbia Mailman School of Public Health
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+M.S. Biostatistics, Theory and Methods
+
+August 2026 - May 2028
+
+### University of Houston
+
+B.S. Mathematics, Biology Minor
+
+August 2023 – May 2026
+
+Relevant completed coursework:
+
+- Biostatistics
+- Multivariate Statistics
+- Mathematical Biology
+- Data Science
+- Machine Learning
+
+Scholarships:
+
+- Madabushi Family Scholarship
+- NSM Alumni Association Scholarship
+
+## Professional Experience
+
+### Academic Athletic Peer Tutor
+
+University of Houston Academic Center for Excellence
+
+August 2024 – May 2026
+
+- Tutor student-athletes in pre-calculus and college algebra.
+- Explain quantitative concepts and strengthen problem-solving skills.
+
