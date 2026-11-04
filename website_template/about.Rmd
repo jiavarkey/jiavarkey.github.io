@@ -44,3 +44,27 @@ August 2024 – May 2026
 - Tutor student-athletes in pre-calculus and college algebra.
 - Explain quantitative concepts and strengthen problem-solving skills.
 
+## Technical Skills
+
+### Programming
+
+- R
+- Python
+- MATLAB
+
+### Software
+
+- RStudio
+- tidyverse
+- ggplot2
+- Excel
+
+### Statistical Methods
+
+- Linear regression
+- ANOVA
+- Hypothesis testing
+- Principal component analysis
+- Random forests
+- Cross-validation
+- Data cleaning and visualization

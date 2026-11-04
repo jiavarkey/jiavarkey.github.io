@@ -1,0 +1,88 @@
+---
+title: "noaa_flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+```{r}
+data("ny_noaa")
+
+set.seed(1)
+ny_noaa_clean =
+  ny_noaa |>
+  janitor::clean_names() |>
+  drop_na() |>
+  separate(date, into = c("year", "month", "day")) |>
+  mutate(
+     prcp = prcp / 10,
+     tmax = as.numeric(tmax) / 10,
+     tmin = as.numeric(tmin) / 10
+  ) |>
+  filter(year == 2010, !is.na(tmax), !is.na(tmin)) |> 
+  sample_n(2000) # Random sampling 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A: Temperature Trends (Scatter Plot)
+
+```{r}
+ny_noaa_clean |>
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+    color = ~month, alpha = 0.5, colors = "viridis"
+  ) |> 
+  layout(
+    xaxis = list(title = "Minimum Temperature (°C)"),
+    yaxis = list(title = "Maximum Temperature (°C)")
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B: Distribution of Max Temperatures by Month (Box Plot)
+
+```{r}
+ny_noaa_clean |> 
+  mutate(month = factor(month, labels = month.abb)) |> 
+  plot_ly(
+    y = ~tmax, x = ~month, color = ~month, 
+    type = "box", colors = "Set3"
+  ) %>% 
+  layout(
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Max Temperature (°C)")
+  )
+```
+
+### Chart C: Total Weather Observations by Station (Bar Plot)
+
+```{r}
+ny_noaa_clean |> 
+  count(id) |> 
+  filter(n > 15) |> 
+  mutate(id = fct_reorder(id, n)) |> 
+  plot_ly(
+    x = ~id, y = ~n, color = ~id, 
+    type = "bar", colors = "viridis"
+  ) |> 
+  layout(
+    xaxis = list(title = "Station ID", showticklabels = FALSE),
+    yaxis = list(title = "Observation Count")
+  )
+```
+```
+
