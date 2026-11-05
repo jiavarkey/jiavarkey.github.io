@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-Hi, I'm Jia Varkey. I am a master's student at Columbia Mailman school of Public Health with an interest in biostatistics, statistical modeling, and using quantitative methods to answer questions that matter. 
+Hello, I'm Jia Varkey. I am a master's student at Columbia Mailman school of Public Health with an interest in biostatistics, statistical modeling, and using quantitative methods to answer questions that matter. 
 
 My academic work has helped me develop a foundation in statistical reasoning, data analysis, and programming. I'm excited to continue developing these skills through biostatistics and applied research.
 
