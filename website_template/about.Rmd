@@ -1,10 +1,11 @@
 ---
-title: "About"
+title: "Jia Varkey: Resume"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
+
 
 ## Education
 
@@ -32,6 +33,7 @@ Scholarships:
 
 - Madabushi Family Scholarship
 - NSM Alumni Association Scholarship
+
 
 ## Professional Experience
 

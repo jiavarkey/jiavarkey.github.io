@@ -5,13 +5,15 @@ navbar:
   right:
     - text: "Resume"
       href: about.html
-    - text: "LinkedIn"
+    - icon: fa-brands fa-linkedin
       href: http://www.linkedin.com/in/jia-varkey-87aa3639b
     - icon: fa-envelope fa-lg
       href: mailto:<jiamvarkey@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<jiavarkey>/
+      href: http://github.com/jiavarkey/
+    - text: "Flexdashboard"
+      href: noaa_flexdashboard.html
       
 output:
   html_document:
-    theme: flatly
+    theme: cosmo

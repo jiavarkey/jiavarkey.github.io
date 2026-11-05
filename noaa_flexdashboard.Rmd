@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    theme: cosmo
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +14,6 @@ library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
-
 
 ```{r}
 data("ny_noaa")
@@ -33,8 +33,7 @@ ny_noaa_clean =
   sample_n(2000) # Random sampling 
 ```
 
-Column {data-width=650}
------------------------------------------------------------------------
+## Column {data-width="650"}
 
 ### Chart A: Temperature Trends (Scatter Plot)
 
@@ -50,8 +49,7 @@ ny_noaa_clean |>
   )
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
+## Column {data-width="350"}
 
 ### Chart B: Distribution of Max Temperatures by Month (Box Plot)
 
@@ -83,6 +81,5 @@ ny_noaa_clean |>
     xaxis = list(title = "Station ID", showticklabels = FALSE),
     yaxis = list(title = "Observation Count")
   )
-```
 ```
 
