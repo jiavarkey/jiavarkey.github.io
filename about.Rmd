@@ -1,0 +1,72 @@
+---
+title: "Jia Varkey: Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+## Education
+
+### Columbia Mailman School of Public Health
+
+M.S. Biostatistics, Theory and Methods
+
+August 2026 - May 2028
+
+### University of Houston
+
+B.S. Mathematics, Biology Minor
+
+August 2023 – May 2026
+
+Relevant completed coursework:
+
+- Biostatistics
+- Multivariate Statistics
+- Mathematical Biology
+- Data Science
+- Machine Learning
+
+Scholarships:
+
+- Madabushi Family Scholarship
+- NSM Alumni Association Scholarship
+
+
+## Professional Experience
+
+### Academic Athletic Peer Tutor
+
+University of Houston Academic Center for Excellence
+
+August 2024 – May 2026
+
+- Tutor student-athletes in pre-calculus and college algebra.
+- Explain quantitative concepts and strengthen problem-solving skills.
+
+## Technical Skills
+
+### Programming
+
+- R
+- Python
+- MATLAB
+
+### Software
+
+- RStudio
+- tidyverse
+- ggplot2
+- Excel
+
+### Statistical Methods
+
+- Linear regression
+- ANOVA
+- Hypothesis testing
+- Principal component analysis
+- Random forests
+- Cross-validation
+- Data cleaning and visualization
